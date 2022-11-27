@@ -9,12 +9,18 @@ func main() {
 	node1.Left = node2
 	node1.Right = node3
 	node2.Left = node4
-	node4.Left = node5
+	node2.Right = node5
 
-	node1.MidOrder()
+	node1.PostOrder()
 }
 
-//1,2,4,5,3
-// 54213
+/*
+                   1
+				2     3
+              4  5
 
-// 54231
+// PreOrder: 1, 2, 4, 5, 3
+// MidOrder: 4, 2, 5, 1, 3
+// PostOrder: 4, 5, 2, 3, 3
+
+*/
